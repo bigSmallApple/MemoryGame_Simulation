@@ -24,15 +24,32 @@ A Java-based simulation to analyze the win rate of two perfect players in an 8-c
 ```
 memory-game-simulation-java/
 ├── src/
-│   ├── Main.java          // Main entry point of the application
-│   ├── GameSimulation.java // Core simulation logic
-│   ├── Player.java        // Class to model player behavior
-│   ├── CardDeck.java      // Class to handle the card deck and card management
-│   ├── Statistics.java    // Class to track and compute win rates
-│   └── Utils.java         // Utility functions (e.g., shuffle deck, print results)
-├── README.md              // Project overview and instructions
-├── LICENSE                // License for the repository
-└── .gitignore             // Files to exclude from version control
+│   ├── main/
+│   │   └── Main.java              // Entry point of the JavaFX application
+│   ├── controller/
+│   │   ├── GameController.java    // Core simulation and game logic
+│   │   ├── SimulationEngine.java  // Handles computer vs computer simulations
+│   │   ├── OnlineGameController.java // Placeholder for future online gameplay logic
+│   ├── model/
+│   │   ├── Card.java              // Represents an individual card
+│   │   ├── Deck.java              // Manages the collection of cards
+│   │   ├── Player.java            // Abstract class for common player behavior
+│   │   ├── HumanPlayer.java       // Represents a human player
+│   │   ├── AIPlayer.java          // Implements AI behavior for various difficulties
+│   ├── view/
+│   │   ├── MainMenu.java          // JavaFX screen for game mode selection
+│   │   ├── GameScreen.java        // JavaFX screen for the main game UI
+│   │   ├── SimulationScreen.java  // JavaFX screen for simulation setup and execution
+│   │   ├── SettingsScreen.java    // JavaFX screen for sound and volume settings
+│   │   ├── ResultScreen.java      // JavaFX screen for simulation results and CSV export
+│   ├── utils/
+│   │   ├── SoundManager.java      // Manages background music and sound effects
+│   │   ├── AnimationManager.java  // Handles animations for cards and transitions
+│   │   ├── CSVExporter.java       // Exports simulation data to a CSV file
+│   │   └── MediaLoader.java       // Loads and manages images and sound resources
+├── README.md                      // Project overview and instructions
+├── LICENSE                        // License for the repository
+└── .gitignore                     // Files to exclude from version control
 ```
 
 ## Getting Started
