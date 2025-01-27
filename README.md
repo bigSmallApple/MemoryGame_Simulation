@@ -26,7 +26,7 @@ A JavaFX-based memory game simulation where players can play locally, compete ag
 ## Project Structure
 
 ```
-memory-game-simulation-java/
+MemoryGame-Simulation-java/
 ├── src/
 │   ├── main/
 │   │   └── Main.java              // Entry point of the JavaFX application
@@ -51,6 +51,11 @@ memory-game-simulation-java/
 │   │   ├── AnimationManager.java  // Handles animations for cards and transitions
 │   │   ├── CSVExporter.java       // Exports simulation data to a CSV file
 │   │   └── MediaLoader.java       // Loads and manages images and sound resources
+├── media/
+│   ├── images/
+│   │   ├── Visual Media Used...   // Folder to store all of visual elements in project
+│   ├── sounds/
+│   │   ├── Audio Media Used...    // Folder to store all of visual elements in project
 ├── README.md                      // Project overview and instructions
 ├── LICENSE                        // License for the repository
 └── .gitignore                     // Files to exclude from version control
