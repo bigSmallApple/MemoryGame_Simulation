@@ -1,23 +1,27 @@
 # Memory Game Simulation
 
-A Java-based simulation to analyze the win rate of two perfect players in an 8-card memory game. This project explores how turn order impacts winning probabilities through computational modeling and statistical analysis.
+A JavaFX-based memory game simulation where players can play locally, compete against an AI, or simulate games between AI players. This project includes a graphical user interface, animations, and sound effects, providing an interactive and engaging experience.
 
 ## Features
 
-- **Perfect Play Logic:** Simulates two players playing the memory game perfectly.
-- **Turn-Based Simulation:** Alternates turns between the players, who aim to collect cards in ascending order (1 through 8).
-- **Win Rate Analysis:** Runs multiple iterations of the game to compute and display win rates for the first and second player.
-- **Customizable Settings:** Configure the number of cards, players, or simulation parameters.
-- **Data Export:** Optionally export the results to a CSV file for further analysis.
+- **Game Modes:**
+  - Play vs. Computer: Choose AI difficulty (Easy, Medium, Hard, Impossible).
+  - Play vs. Player: Two players share the same computer.
+  - Simulation: Run AI vs. AI simulations to analyze win rates and export results to a CSV file.
+  - Play Online: Placeholder for future implementation.
+- **Customizable Simulations:** Configure the number of games and difficulty levels for AI players.
+- **Graphical Interface:** Built with JavaFX, featuring animations and sound effects.
+- **Settings Menu:** Adjust music, sound effects, and master volume.
+- **Data Export:** Optionally export simulation results to a CSV file for further analysis.
 
 ## How the Game Works
 
 1. There are 8 cards, numbered 1 through 8, placed face down.
-2. Two players take turns picking cards.
+2. Players take turns picking cards.
 3. Players aim to collect the cards in ascending order (1, 2, 3, ..., 8).
 4. After viewing a card, the player places it back in the same spot.
 5. The game continues until one player successfully collects all cards in order.
-6. If both players play perfectly, this simulation analyzes who is more likely to win based on turn order.
+6. Simulations analyze outcomes between different AI difficulties and turn order impacts.
 
 ## Project Structure
 
@@ -76,15 +80,21 @@ To run this project, you'll need:
 
 4. Compile and run the project:
    ```bash
-   javac src/*.java
-   java src.Main
+   javac src/**/*.java
+   java src.main.Main
    ```
 
 ## Usage
 
-- Modify the simulation parameters (e.g., number of games, number of cards) in `GameSimulation.java`.
-- Run the program to simulate the game and analyze the win rates.
-- View the results in the console or export them for further analysis.
+- Select a game mode from the main menu:
+  - Play vs. Computer: Compete against an AI opponent with selectable difficulty.
+  - Play vs. Player: Two players take turns on the same computer.
+  - Simulation: Configure and run AI vs. AI games to analyze outcomes.
+  - Settings: Adjust volume levels and sound preferences.
+- For simulations, specify:
+  - AI difficulty for both players.
+  - Number of games to simulate.
+  - Export results to a CSV file for further analysis.
 
 ## Example Output
 
@@ -97,10 +107,10 @@ Total Games Played: 10,000
 
 ## Future Improvements
 
-- Add a graphical user interface (GUI) using JavaFX.
+- Add online multiplayer functionality.
 - Allow for different deck sizes or custom rules.
-- Compare results for players with imperfect memory.
-- Add more statistical analysis and visualization options.
+- Enhance AI strategies for more realistic play styles.
+- Add visual and sound customizations for a more immersive experience.
 
 ## License
 
@@ -115,4 +125,4 @@ Contributions are welcome! If you'd like to contribute, please:
 
 ## Acknowledgments
 
-This project was inspired by the curiosity of analyzing memory games and their outcomes under perfect conditions.
+This project was inspired by the curiosity of analyzing memory games and their outcomes under different conditions, and by the desire to create a visually appealing, interactive JavaFX application.
