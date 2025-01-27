@@ -1,4 +1,4 @@
-# Memory Game Simulation (Java)
+# Memory Game Simulation
 
 A Java-based simulation to analyze the win rate of two perfect players in an 8-card memory game. This project explores how turn order impacts winning probabilities through computational modeling and statistical analysis.
 
