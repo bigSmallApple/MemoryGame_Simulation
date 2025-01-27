@@ -53,9 +53,9 @@ MemoryGame-Simulation-java/
 │   │   └── MediaLoader.java       // Loads and manages images and sound resources
 ├── media/
 │   ├── images/
-│   │   ├── Visual Media Used...   // Folder to store all of visual elements in project
+│   │   └── Visual Media Used...   // Folder to store all of visual elements in project
 │   ├── sounds/
-│   │   ├── Audio Media Used...    // Folder to store all of visual elements in project
+│   │   └── Audio Media Used...    // Folder to store all of visual elements in project
 ├── README.md                      // Project overview and instructions
 ├── LICENSE                        // License for the repository
 └── .gitignore                     // Files to exclude from version control
